@@ -17,7 +17,7 @@ export const HeroSection = ({ onScrollToContent }: HeroSectionProps) => {
       
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="animate-slide-up">
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent animate-pulse-glow">
+          <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
             MIKAAL
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -39,7 +39,6 @@ export const HeroSection = ({ onScrollToContent }: HeroSectionProps) => {
               variant="glow" 
               size="lg" 
               onClick={onScrollToContent}
-              className="animate-pulse-glow"
             >
               Explore My Journey
               <ChevronDown className="ml-2 h-5 w-5" />
@@ -49,7 +48,7 @@ export const HeroSection = ({ onScrollToContent }: HeroSectionProps) => {
       </div>
       
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
         <ChevronDown className="h-8 w-8 text-primary" />
       </div>
     </section>
