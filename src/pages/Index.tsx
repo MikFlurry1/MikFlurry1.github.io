@@ -19,15 +19,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
-      <HeroSection onScrollToContent={scrollToToc} />
-      
-      <div ref={tocRef}>
-        <TableOfContents onScrollToAbout={scrollToAbout} />
-      </div>
-      
-      <div ref={aboutRef}>
-        <AboutSection />
-      </div>
+      <HeroSection />
     </div>
   );
 };
