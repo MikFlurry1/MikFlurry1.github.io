@@ -15,27 +15,29 @@ export const HeroSection = ({ onScrollToContent }: HeroSectionProps) => {
         <div className="absolute bottom-1/4 left-1/3 w-32 h-32 rounded-full bg-matrix-teal/10 animate-float blur-3xl" style={{ animationDelay: "4s" }}></div>
       </div>
       
-      <div className="container mx-auto px-4 text-center relative z-10">
+      <div className="container mx-auto px-4 text-center relative z-10 flex flex-col justify-between h-full pt-8">
         <div className="animate-slide-up">
-          <h1 className="text-5xl md:text-7xl font-black mb-4" style={{ fontFamily: 'Impact, Arial Black, sans-serif' }}>
-            <span className="text-electric-blue">MIKAAL</span>{' '}
-            <span className="text-foreground">KHAN</span>
-          </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mb-2">
+          <div className="relative inline-block mb-4">
+            <h1 className="text-6xl md:text-8xl font-black relative" style={{ fontFamily: 'Impact, Arial Black, sans-serif' }}>
+              <span className="bg-cyber-cyan text-black px-2 py-1">MIKAAL</span>
+              <span className="bg-cyber-cyan text-black px-2 py-1 absolute -bottom-2 -right-8 md:-bottom-4 md:-right-12">KHAN</span>
+            </h1>
+          </div>
+          <p className="text-base md:text-lg text-muted-foreground mb-2 mt-8">
             11-Year-Old Developer & Gamer from Dubai
           </p>
-          <p className="text-sm md:text-base text-muted-foreground/80 mb-6">
+          <p className="text-sm text-muted-foreground/80 mb-6">
             Building games, coding projects, and exploring GitHub repositories
           </p>
-          <div className="flex flex-col items-center gap-6">
-            <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-              <span className="px-4 py-2 rounded-full bg-card border border-cyber-cyan/30 text-cyber-cyan shadow-glow-cyan">
+          <div className="flex flex-col items-center gap-4">
+            <div className="flex flex-wrap justify-center gap-3 text-xs md:text-sm">
+              <span className="px-3 py-1 rounded-full bg-card border border-cyber-cyan/30 text-cyber-cyan shadow-glow-cyan">
                 Game Developer
               </span>
-              <span className="px-4 py-2 rounded-full bg-card border border-electric-blue/30 text-electric-blue shadow-glow-blue">
+              <span className="px-3 py-1 rounded-full bg-card border border-electric-blue/30 text-electric-blue shadow-glow-blue">
                 Xbox Gamer
               </span>
-              <span className="px-4 py-2 rounded-full bg-card border border-matrix-teal/30 text-matrix-teal shadow-glow-teal">
+              <span className="px-3 py-1 rounded-full bg-card border border-matrix-teal/30 text-matrix-teal shadow-glow-teal">
                 Creative Coder
               </span>
             </div>
@@ -45,15 +47,17 @@ export const HeroSection = ({ onScrollToContent }: HeroSectionProps) => {
               onClick={onScrollToContent}
             >
               Explore My Journey
-              <ChevronDown className="ml-2 h-5 w-5" />
+              <ChevronDown className="ml-2 h-4 w-4" />
             </Button>
           </div>
         </div>
-      </div>
-      
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-        <ChevronDown className="h-8 w-8 text-primary" />
+        
+        {/* Bottom section with scroll indicator */}
+        <div className="pb-8">
+          <div className="flex justify-center">
+            <ChevronDown className="h-6 w-6 text-primary" />
+          </div>
+        </div>
       </div>
     </section>
   );
