@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://mikflurry1.github.io/mikaals-portfolio-07/",
+  "homepage": "/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
