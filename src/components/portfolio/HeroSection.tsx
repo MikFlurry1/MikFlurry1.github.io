@@ -7,7 +7,7 @@ interface HeroSectionProps {
 
 export const HeroSection = ({ onScrollToContent }: HeroSectionProps) => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-hero relative overflow-hidden">
+    <section className="h-screen flex items-center justify-center bg-gradient-hero relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-cyber-cyan/10 animate-float blur-3xl"></div>
@@ -17,11 +17,15 @@ export const HeroSection = ({ onScrollToContent }: HeroSectionProps) => {
       
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="animate-slide-up">
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
-            MIKAAL
+          <h1 className="text-5xl md:text-7xl font-black mb-4" style={{ fontFamily: 'Impact, Arial Black, sans-serif' }}>
+            <span className="text-electric-blue">MIKAAL</span>{' '}
+            <span className="text-foreground">KHAN</span>
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-muted-foreground mb-2">
             11-Year-Old Developer & Gamer from Dubai
+          </p>
+          <p className="text-sm md:text-base text-muted-foreground/80 mb-6">
+            Building games, coding projects, and exploring GitHub repositories
           </p>
           <div className="flex flex-col items-center gap-6">
             <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">

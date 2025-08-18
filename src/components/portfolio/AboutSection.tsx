@@ -3,14 +3,14 @@ import { MapPin, Gamepad, Code2, Heart } from "lucide-react";
 
 export const AboutSection = () => {
   return (
-    <section id="about" className="min-h-screen py-20 px-4">
+    <section id="about" className="py-16 px-4">
       <div className="container mx-auto max-w-4xl">
-        <div className="text-center mb-16 animate-slide-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
-            Hey, I'm Mikaal! 👋
+        <div className="text-center mb-12 animate-slide-up">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
+            About Me
           </h2>
-          <div className="flex items-center justify-center gap-2 text-muted-foreground mb-8">
-            <MapPin className="h-5 w-5 text-primary" />
+          <div className="flex items-center justify-center gap-2 text-muted-foreground mb-6">
+            <MapPin className="h-4 w-4 text-primary" />
             <span>Dubai, UAE • Originally from Pakistan</span>
           </div>
         </div>
@@ -23,8 +23,7 @@ export const AboutSection = () => {
                 <h3 className="text-2xl font-bold text-cyber-cyan">Gaming Life</h3>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                I'm super into gaming—Xbox, Minecraft, board games—you name it. Gaming isn't just fun for me, 
-                it's where I get inspired to create my own experiences and learn how things work under the hood.
+                Xbox, Minecraft, board games—gaming fuels my creativity and inspires me to build my own experiences.
               </p>
             </CardContent>
           </Card>
@@ -36,8 +35,7 @@ export const AboutSection = () => {
                 <h3 className="text-2xl font-bold text-electric-blue">Building Dreams</h3>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                But I don't just play games, I like building them too. I mess around with coding, 
-                making projects like a chat app or even a Rocket League Sideswipe-style game.
+                I code games, chat apps, and GitHub projects. Currently working on a Rocket League Sideswipe-style game and exploring open-source contributions.
               </p>
             </CardContent>
           </Card>
@@ -49,18 +47,10 @@ export const AboutSection = () => {
               <Heart className="h-8 w-8 text-matrix-teal" />
               <h3 className="text-2xl font-bold text-matrix-teal">Who I Am</h3>
             </div>
-            <div className="space-y-6 text-muted-foreground leading-relaxed">
+            <div className="text-muted-foreground leading-relaxed">
               <p>
-                I'm curious and creative, always wanting to figure out how things work and then try making my own version. 
-                I like to keep things simple but cool.
-              </p>
-              <p>
-                I've got a good sense of humor too—I don't mind getting roasted, and I'll throw some right back. 
-                I like hanging out, joking, and having fun.
-              </p>
-              <p>
-                At the same time, I'm determined—if I want to learn or build something, I'll keep at it until I get it right. 
-                That's just how I roll.
+                Curious creator who reverse-engineers cool stuff and builds my own versions. I keep things simple but impactful, 
+                have a good sense of humor, and stay determined until I master what I'm learning.
               </p>
             </div>
           </CardContent>
