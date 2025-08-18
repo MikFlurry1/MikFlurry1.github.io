@@ -20,7 +20,7 @@ export const HeroSection = ({}: HeroSectionProps) => {
             <div className="relative" style={{ width: '580px', height: '160px', margin: '0 auto' }}>
               <h1 className="text-6xl md:text-8xl font-black absolute" style={{ fontFamily: 'Impact, Arial Black, sans-serif' }}>
                 <span className="bg-cyber-cyan text-black px-4 py-2 absolute top-0 left-0">MIKAAL</span>
-                <span className="bg-cyber-cyan text-black px-4 py-2 absolute" style={{ top: '85px', left: '300px' }}>KHAN</span>
+                <span className="bg-cyber-cyan text-black px-4 py-2 absolute" style={{ top: '90px', left: '305px' }}>KHAN</span>
               </h1>
             </div>
           </div>
