@@ -44,35 +44,47 @@ export const HeroSection = ({}: HeroSectionProps) => {
         
         {/* Descriptions below */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          <div className="bg-gradient-to-br from-cyber-cyan/10 to-cyber-cyan/5 border border-cyber-cyan/30 rounded-lg p-6 shadow-glow-cyan text-center">
+          <div 
+            className="bg-gradient-to-br from-cyber-cyan/10 to-cyber-cyan/5 border border-cyber-cyan/30 rounded-lg p-6 shadow-glow-cyan text-center cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-glow-cyan"
+            onClick={() => document.getElementById('gaming-life')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             <div className="flex items-center justify-center gap-3 mb-3">
               <Gamepad className="h-6 w-6 text-cyber-cyan" />
               <h3 className="text-lg font-bold text-cyber-cyan">Gaming Life</h3>
             </div>
-            <p className="text-muted-foreground text-sm">
+            <p className="text-muted-foreground text-sm mb-3">
               Xbox, Minecraft, board games—gaming fuels my creativity and inspires me to build my own experiences.
             </p>
+            <p className="text-xs text-cyber-cyan hover:underline">Click to explore →</p>
           </div>
           
-          <div className="bg-gradient-to-br from-electric-blue/10 to-electric-blue/5 border border-electric-blue/30 rounded-lg p-6 shadow-glow-blue text-center">
+          <div 
+            className="bg-gradient-to-br from-electric-blue/10 to-electric-blue/5 border border-electric-blue/30 rounded-lg p-6 shadow-glow-blue text-center cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-glow-blue"
+            onClick={() => document.getElementById('building-dreams')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             <div className="flex items-center justify-center gap-3 mb-3">
               <Code2 className="h-6 w-6 text-electric-blue" />
               <h3 className="text-lg font-bold text-electric-blue">Building Dreams</h3>
             </div>
-            <p className="text-muted-foreground text-sm">
+            <p className="text-muted-foreground text-sm mb-3">
               I code games, chat apps, and GitHub projects. Currently working on a Rocket League Sideswipe-style game and exploring open-source contributions.
             </p>
+            <p className="text-xs text-electric-blue hover:underline">Click to explore →</p>
           </div>
           
-          <div className="bg-gradient-to-br from-matrix-teal/10 to-matrix-teal/5 border border-matrix-teal/30 rounded-lg p-6 shadow-glow-teal text-center">
+          <div 
+            className="bg-gradient-to-br from-matrix-teal/10 to-matrix-teal/5 border border-matrix-teal/30 rounded-lg p-6 shadow-glow-teal text-center cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-glow-teal"
+            onClick={() => document.getElementById('who-i-am')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             <div className="flex items-center justify-center gap-3 mb-3">
               <Heart className="h-6 w-6 text-matrix-teal" />
               <h3 className="text-lg font-bold text-matrix-teal">Who I Am</h3>
             </div>
-            <p className="text-muted-foreground text-sm">
+            <p className="text-muted-foreground text-sm mb-3">
               Curious creator who reverse-engineers cool stuff and builds my own versions. I keep things simple but impactful, 
               have a good sense of humor, and stay determined until I master what I'm learning.
             </p>
+            <p className="text-xs text-matrix-teal hover:underline">Click to explore →</p>
           </div>
         </div>
       </div>
