@@ -1,11 +1,32 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useRef } from "react";
+import { HeroSection } from "@/components/portfolio/HeroSection";
+import { TableOfContents } from "@/components/portfolio/TableOfContents";
+import { AboutSection } from "@/components/portfolio/AboutSection";
 
 const Index = () => {
+  const tocRef = useRef<HTMLDivElement>(null);
+  const aboutRef = useRef<HTMLDivElement>(null);
+
+  const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
+    ref.current?.scrollIntoView({ 
+      behavior: "smooth",
+      block: "start"
+    });
+  };
+
+  const scrollToToc = () => scrollToSection(tocRef);
+  const scrollToAbout = () => scrollToSection(aboutRef);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+      <HeroSection onScrollToContent={scrollToToc} />
+      
+      <div ref={tocRef}>
+        <TableOfContents onScrollToAbout={scrollToAbout} />
+      </div>
+      
+      <div ref={aboutRef}>
+        <AboutSection />
       </div>
     </div>
   );
