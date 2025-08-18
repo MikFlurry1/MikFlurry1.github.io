@@ -17,10 +17,10 @@ export const HeroSection = ({}: HeroSectionProps) => {
         {/* Title at the top */}
         <div className="text-center mb-12">
           <div className="relative inline-block mb-6">
-            <div className="relative" style={{ width: '500px', height: '180px', margin: '0 auto' }}>
+            <div className="relative" style={{ width: '520px', height: '160px', margin: '0 auto' }}>
               <h1 className="text-6xl md:text-8xl font-black absolute" style={{ fontFamily: 'Impact, Arial Black, sans-serif' }}>
                 <span className="bg-cyber-cyan text-black px-4 py-2 absolute top-0 left-0">MIKAAL</span>
-                <span className="bg-cyber-cyan text-black px-4 py-2 absolute" style={{ top: '55px', left: '200px' }}>KHAN</span>
+                <span className="bg-cyber-cyan text-black px-4 py-2 absolute" style={{ top: '80px', left: '240px' }}>KHAN</span>
               </h1>
             </div>
           </div>
