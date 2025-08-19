@@ -28,6 +28,12 @@ const Footer: React.FC<FooterProps> = ({
           <div className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} All rights reserved.
           </div>
+          <div
+            onClick={e => (e.currentTarget.innerText = "🎉 You found the egg! 🎉")}
+            style={{ background: "white", cursor: "pointer", padding: "5px", marginTop: "8px" }}
+          >
+            Click me
+          </div>
         </div>
       </div>
     </footer>
